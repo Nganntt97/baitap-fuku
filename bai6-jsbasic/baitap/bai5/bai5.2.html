@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Phân biệt a++ và ++a.
+Tính giá trị của biếu thức sau:
+let a=6;
+let result: ++a + a + a++ + ++a + a;
+ -->
+ <script>
+    // a++: Trả về giá trị hiện tại của a, sau đó tăng giá trị của a lên 1.
+// ++a:Tăng giá trị của a lên 1 trước khi trả về giá trị mới của a.
+
+let a=6;
+let result= ++a + a + a++ + ++a + a;
+// 7+7+7+9+9=39
+console.log(result);
+
+ </script>
+</body>
+</html>

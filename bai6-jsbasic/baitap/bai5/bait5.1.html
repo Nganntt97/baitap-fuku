@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Phân biệt “==” và “===”
+Kết quả của phép toán và giải thích:
+let a = 5;
+let b= “5”;
+console.log(a==b);  console.log(a===b);
+console.log(a!=b);  console.log(a!==b); -->
+    <script>
+// Toán tử "==": So sánh giá trị của hai biến mà không quan tâm đến kiểu dữ liệu.
+
+// Toán tử "===": So sánh giá trị và kiểu dữ liệu của hai biến.;
+let a = 5;
+let b= “5”;
+console.log(a==b); 
+// So sánh giá trị của a và b. 
+// JavaScript thực hiện chuyển đổi kiểu dữ liệu tự động và so sánh giá trị bằng nhau, nên kết quả là true.
+ console.log(a===b);
+//  So sánh giá trị và kiểu dữ liệu của a và b. 
+// Vì a là một số và b là một chuỗi, kiểu dữ liệu không giống nhau, nên kết quả là false.
+console.log(a!=b); 
+// So sánh giá trị của a và b. 
+// JavaScript thực hiện chuyển đổi kiểu dữ liệu tự động và so sánh giá trị khác nhau, nên kết quả là false.
+ console.log(a!==b);
+//  So sánh giá trị và kiểu dữ liệu của a và b. 
+// Vì a là một số và b là một chuỗi, kiểu dữ liệu không giống nhau, nên kết quả là true.
+    </script>
+</body>
+</html>
