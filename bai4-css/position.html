@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: relative;
+            top: 50px;
+            /* top :dịch xuống dưới(cách bên trên) 50px */
+            left: 50px;
+            /* left :lùi sang bên trái 50px */
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color:blue;
+        } 
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color:chartreuse;
+            /* position:relative;
+            top: 50px;
+            left: 50px; */
+
+        }
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+            position:absolute;
+            top: 0px;;
+            right: 50px; 
+        }
+        .title{
+            width: 300px;
+            height: 300px;
+            background-color: crimson;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- POSITION:
+    DÙNG ĐỂ ĐỊNH VỊ VỊ TRÍ CỦA ELEMENT
+    1.static:trạng thái mặc định
+    2.relative:vị trí tương đối
+    -Nó sẽ lấy vị trí ban đầu của nó làm gốc
+    -Nếu 1 element có thuộc tính position có giá trị là relative thì nó sẽ lấy vị trí ban đầu làm gốc
+    3.absolute:
+    -position:absolute
+    -Nó sẽ ăn theo thằng chưa nó GẦN NHẤT có thuộc tính là position(lấy vị trí của thằng cha làm gốc)
+    -Nếu không có vị trí làm gốc chứa thuộc tính position thì sẽ ăn theo vị trí kích thuớc của màn hình.
+    4.fixed:
+    5.sticky:
+    -->
+    <div class="box1">
+        box1
+    </div>
+    <div class="box2">
+        box2
+    </div>
+    <div class="title">
+    <div class="box3">
+        box3
+        <div class="container">
+            container
+        </div>
+    </div>
+</div>
+</body>
+</html>
