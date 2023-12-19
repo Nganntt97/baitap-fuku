@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Tính chỉ số cân nặng BMI :
+Viết chương trình cho phép người dùng nhập vào cân nặng(kg) và chiều cao(m);
+Sau đó hiển thị kết quả phân loại theo chỉ số BMI dưới đây.
+bmi = weight / ( height ^ 2 );
+ -->
+    <script>
+        let weight = +prompt("hãy nhập cân nặng của bạn!");
+        let height = +prompt("hãy nhập chiều cao của bạn!(0.00cm)");
+        let bmi = weight / (height * 2);
+
+        console.log(bmi);
+        if(bmi < 18.5) {
+            console.log("cân nặng gầy");
+        } else if(18.5 < bmi && bmi < 24.9) {
+            console.log("bình thường");
+        } else if(bmi >= 25.0) {
+            console.log("thừa cân");
+        } else if(25 < bmi && bmi < 29.9) {
+            console.log("tiền béo phì");
+        } else if(30 < bmi && bmi < 34.9) {
+            console.log("béo phì độ I");
+        } else if(35 < bmi && bmi < 39.9) {
+            console.log("béo phì độ II");
+        } else if(bmi >= 40) {
+            console.log("béo phì độ III")
+        }
+        // switch (bmi) {
+        //     case bmi < parseFloat(18.5):
+        //         console.log("cân nặng gầy");
+        //         break;
+        //     case 18.5 < bmi < 24.9:
+        //         console.log("bình thường");
+        //     case bmi >= 25:
+        //         console.log("thừa cân");
+        //     case 25 < bmi < 29.9:
+        //         console.log("tiền béo phì");
+        //     case 30 < bmi < 34.9:
+        //         console.log("béo phì độ I");
+        //     case 35 < bmi < 39.9:
+        //         console.log("béo phì độ II");
+        //     case bmi >= 40:
+        //         console.log("béo phì độ III");
+        //     default:
+        //         // console.log("hello");
+        //         break;
+
+    </script>
+</body>
+
+</html>

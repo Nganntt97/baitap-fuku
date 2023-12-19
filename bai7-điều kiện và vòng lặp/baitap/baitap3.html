@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Viết chương trình cho phép người dùng nhập vào số giờ trong ngày.
+Nếu trước 10h thì hiển thị : “Good morning”.
+Nếu thời gian chưa tới 20h thì hiển thị : “Good day”.
+-Nếu sau 20h hiển thị : “Good evening”.
+ -->
+ <script>
+    let time = +prompt("hãy nhập giờ!");
+if (time<=10) {
+    alert("Good morning");
+}else if (10<time && time<=20){
+    alert("Good day");
+}else if (time>20){
+    // console.log("Good evening");
+    alert("Good evening");
+}
+ </script>
+</body>
+</html>

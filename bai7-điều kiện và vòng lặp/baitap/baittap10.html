@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết chương trình nhập vào số tháng trong năm,in ra số ngày trong tháng đó.
+Ví dụ : Người dùng nhập vào số 7 thì in ra tháng 7 có 31 ngày.
+ -->
+    <script>
+        let month = +prompt("hãy nhập số tháng(1-12)");
+        if (month === 1 || month == 3 || month === 5 ||
+            month === 7 || month === 8 || month === 10 || month === 12) {
+            console.log(`tháng ${month} có 31 ngày`);
+
+        } else if (month === 4 || month === 6 || month === 9 || month === 11) {
+            console.log(`tháng ${month} có 30 ngày`);
+        } else {
+            console.log(`${month}　có 28 ngày`);
+        }
+    </script>
+</body>
+
+</html>

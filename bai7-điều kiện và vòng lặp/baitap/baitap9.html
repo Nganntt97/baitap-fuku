@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết chương trình cho phép người dùng nhập điểm các môn:Toán,Lí,Hoá,
+Văn, Sử , Địa (thang điểm 10);
+Sau đó tính điểm trung bình các môn học
+Hiển thị kết quả học tập theo loại như sau:
+
+8.0 <=ĐTB<=10: xếp loại GIỎI.
+6.5<=ĐTB<=7.9: xếp loại KHÁ.
+5.0<=ĐTB<=6.4: xếp loại TRUNG BÌNH.
+ĐTB<5.0 : xếp loại YẾU.
+ -->
+    <script>
+        let toan = +prompt("hãy nhập điểm toán");
+        let li = +prompt("hãy nhập điểm lý");
+        let hoa = +prompt("hãy nhập điểm hoá");
+        let van = +prompt("hãy nhập điểm van");
+        let su = +prompt("hãy nhập điểm su");
+        let dia = +prompt("hãy nhập điểm dia");
+        let total = (toan + li + van + su + dia + hoa) / 6;
+        console.log(total);
+        if(8 <= total && total <= 10) {
+            console.log("GIỎI");
+        } else if(6.5 <= total && total <= 7.9) {
+            console.log("KHÁ");
+        } else if(5.0 <= total && total <= 6.4) {
+            console.log("TRUNG BÌNH");
+        } else {
+            console.log("YẾU");
+        }
+    // if (8<=total<=10) {
+    //     console.log("GIỎI");
+        
+    // }else if(6.5<=total<7.9){
+
+    // }
+
+        // switch (true) {
+        //     case 8 <= total <= 10:
+        //         console.log("GIỎI");
+        //         break;
+        //     case 6.5 <= total <= 7.9:
+        //         console.log("KHÁ");
+        //         break;
+        //     case 5.0 <= total <= 6.4:
+        //         console.log("TRUNG BÌNH");
+        //         break;
+        //     default:
+        //         console.log("YẾU");
+        //         break;
+        // }
+    </script>
+</body>
+
+</html>

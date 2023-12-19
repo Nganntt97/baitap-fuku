@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Viết chương trình cho phép người dùng nhập vào 1 số.
+Kiểm tra xem số nhập vào là số chẵn hay số lẻ (sử dụng switch case).
+ -->
+ <script>
+    let number =+prompt("hãy nhập số!")
+    switch (number) {
+        case number%2==0:
+            console.log(number,"là số chẵn");
+            break;
+        default:
+            console.log(number,"là số lẻ");
+            break;
+    }
+ </script>
+</body>
+</html>
