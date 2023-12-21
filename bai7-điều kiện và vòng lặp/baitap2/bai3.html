@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết chương trình nhập vào một số nguyên dương n (n≤100).
+         Hãy in ra bảng số có n dòng, mỗi dòng in n số nguyên liên tiếp, 
+         dòng thứ i bắt đầu từ số i.
+Ví dụ với n =5:
+1 2 3 4 5
+2 3 4 5 6
+3 4 5 6 7
+4 5 6 7 8
+5 6 7 8 9
+ -->
+    <script>
+        let n = +prompt("nhập vaò một số nguyên dương!");
+        if (n > 100) {
+            console.log("vui lòng nhập số <=100");
+
+        } else {
+            for (let i = 0; i < n; i++) {
+                let count = ""
+                for (let j = i; j < i + n; j++) {
+                    count += j + " ";
+                }
+                console.log(count);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
