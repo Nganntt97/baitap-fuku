@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.Function:hàm
+        là 1 chương trình con bao gồm tập hoẹp các câu lệnh
+        thực hiện 1 tạc vụ cụ thể.
+        có thể tái sử dụng và bảo trì tốt hơn giuopd nâng cao hiệu suất công việc.
+
+        2.Các cách khai báo hàm
+          a.declaration:
+          function sayHello(){
+            //thân của hàm
+            chứa các logic
+          }
+          -tên hàm đặt theo quy tắc camel-cáse,thường là hành động.
+          b.expression function
+          c.arrow function
+          d.IIFE(hàm dùng để làm nhưxng cái thư viêjn)
+
+          3.Tham số ,đối sôs trong hàm
+          -nhờ tham số,đối số nên hàm mới cso thể tái use
+          -đối số(argument):khi gọi hàm truyền giá trị cho nó
+          -tham số(params):giá trị hàm nhận về
+
+          4.Return trong hàm
+          -return chỉ dùng trong hàm
+          -hàm gặp Return sẽ dùng chườnbg trình
+          -return kết quả trả về của hàm
+     -->
+     <script>
+        // mới khai báo,chưa goinj hàm
+        // để hàm được thực thi thì phải gọi hàm
+        function sayHello(a,b) {
+            console.log("xin chào",a,b);
+        }
+        sayHello("hoa","lan")  //gọi hàm để hàm được chạy
+        sayHello("mai","hùng");
+        function tinhTong(a,b) {
+          let total=0;
+          for (let i= a; i <= b; i++) {
+            total+=i;
+          }
+          console.log(`tổng các số từ ${a} đến ${b} là ${total}`);
+        }
+        tinhTong(2,7);
+        tinhTong(6,12);
+
+        // 
+        let result= function diemTrungBinh(a,b,c) {
+          return (a+b+c)/3
+        }
+        console.log(result(5,6,7));
+     </script>
+</body>
+</html>

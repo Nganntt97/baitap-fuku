@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết chương trình cho người dùng nhập vào 3 số,
+         viết hàm kiểm tra để tìm ra số bé nhất và in ra số đó -->
+    <script>
+        let so1 = +prompt("hãy nhập vào 1 số bất kỳ!");
+        let so2 = +prompt("hãy nhập vào 1 số bất kỳ!");
+        let so3 = +prompt("hãy nhập vào 1 số bất kỳ!");
+        function soBe() {
+            let min = so1;
+            if (min > so2) {
+                min = so2
+            } else if (min > so3){
+                min = so3
+            }
+            console.log(`số bé nhất là ${min}`);
+        }
+        
+        soBe()
+
+
+    </script>
+</body>
+
+</html>

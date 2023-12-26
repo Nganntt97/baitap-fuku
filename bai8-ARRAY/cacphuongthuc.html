@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    1.split():dufng để chuyển 1 chuỗi thành 1 mảng
+
+    2.reverse(): đảo ngược mảng
+
+    3.join:chuyển mảng thành chuỗi
+
+    4.indexOf:kiểm tra phần tử có trong mảng hay không.
+    -nếu có trả về vị trí,nếu không trả về -1
+
+    5.includes:kiểm tra phần tử có trrong mảng hay không
+    -if have will return TRUE,without retủrn FALSE
+
+    6.sort() sắp xếp theo bảng mã assci
+
+     -->
+     <script>
+        // split
+        let text="hello";
+        let result=text.split("");
+        console.log(result);
+
+        // reverse
+        let numbers=[1,2,3,4,5,6];
+        numbers.reverse();
+        console.log(numbers);
+
+    //     // join
+       let textjoin= numbers.join("");
+        console.log(textjoin);
+
+        // indexOf
+        let tun=numbers.indexOf(5);
+        console.log(tun);
+
+        // includes
+        let arr=numbers.includes(7);
+        console.log(arr);
+
+        // sort
+        let students=["mia","anh","hoa","lá"];
+        students.sort();
+        console.log(students);
+
+     </script>
+</body>
+</html>

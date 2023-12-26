@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Viết một chương trình nhận một số nhập vào và chèn dấu (-) giữa 2 số chẵn.
+Ví dụ nếu bạn nhập vào 245468 thì kết quả của chương trình sẽ là 2-454-6-8.
+ -->
+    <script>
+        let n = prompt("hãy nhập chuỗi số bất kỳ!");
+        let result = [];
+
+        for (let i = 0; i < n.length; i++) {
+            let number = n[i];
+            // console.log("i",number);
+            let nextNumber = n[i + 1];
+            result += number;
+            if (number % 2 === 0 && nextNumber % 2 === 0){
+                result+="-";
+            }
+        }
+        console.log(result);
+
+
+
+    //     // console.log(result);
+    //     if ((n[i]) % 2 === 0 && (n[i + 1] % 2 === 0)) {
+    //         result.push("-");
+    //         console.log(result);
+    //     } else {
+
+    //     }
+    // }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1.ARRAY:là kiểu dữ liệu thuộc loại phức ttạp (reference type) 
+    -Dùng để chứa all mọi data
+    -Các phần tử trong mảng ngăn cách nhau bơỉ dấu phẩy,
+
+    **2.CÁCH KHAI BÁO 1 MẢNG
+    + let array=[];
+     đặt teen có ý nghĩa,tuân theo camel-case
+
+     +new Array():tham khảo
+
+     **　3.CRUD với mảng
+     C: CREATE(thêm phần tử vao trong mảng):
+
+     -push():là 1 phương thức dùnbg cho mảng để thêm 
+     phânf tử vào VỊ TRÍ CUỐI CÙNG của mảng
+
+     -unshift():thêm phần tử vào vị trí đầu của mảng.
+
+     -splice(): để thêm p.tu vào vị trí mong muốn
+     splice (sô vị trí muốn thêm vào,số phần tử muốn xoá,"tên phần tử muốn thêm vào")
+
+
+     R:READ(đọc):đọc và duyệt các phần tuử trong mảng
+     
+     U: UPDATE(cập nhập)
+
+     -Cập nhập,thay p.tu trong mảng
+     *array[vị trí cần thay]="tên phần tử cần thay"
+
+     *splice
+
+     delete(xoá)
+
+     -pop()xoá phần từ cuối cùng trong mảng
+
+     -shift()xoá phần tử đầu tiên trong mảng
+
+     -splice(vị trí;nọi dung)
+
+
+
+     ** 4.CÁC KIẾN THỨC CẦN NHỚ CỦA MẢNG
+     -length là độ dài của mảng.
+     -chỉ số index của các phần từ trong mảng bắt đầu từ 0
+    -->
+    <script>
+        // khai báo mảng
+        let array = ["hoa", 5, NaN, null, []];
+        let students = []
+        // create .push
+        let name = [];
+         name.push("vân");
+        console.log(name);
+        name.unshift("minh")
+        // splice
+        name.splice(2,0,"hồng")
+        for (let i = 0; i < name.length; i++) {
+           console.log(name[i]); 
+        }
+
+        name[2]="mai"
+    </script>
+</body>
+
+</html>

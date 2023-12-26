@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Cho mảng sau:
+let arr=[1,2,3,4,5,6,7,8,9,10]
+Viết hàm trả về tất cả các cặp số có tổng bằng 10
+ -->
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function tinhTong() {
+            let result = [];
+            for (let i = 0; i < arr.length; i++) {
+                console.log(i);
+                for (let j = i + 1; j <arr.length; j++) {
+                    console.log(j);
+                    if (arr[i] + arr[j] == 10) {
+                        result.push([arr[i],arr[j]]);
+                    }
+                }
+            }
+            console.log(`các cặp số có tổng bằng 10 là ${result}`);
+        }
+        tinhTong()
+
+    </script>
+</body>
+
+</html>
