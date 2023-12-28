@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        ĐỆ QUY
+        -là một function tự gọi lkaji chính mình.
+     -->
+    <script>
+        // function giaiThua(a) {
+        //     if (a==1) return 1
+        //     return a*giaiThua(--a)
+        //     } 
+        // console.log(giaiThua(5));
+        let n = +prompt("nhập số")
+        function tinhTong(n) {
+            if (n == 10)
+                return 10
+            return n + tinhTong(++n)
+
+        }
+        console.log(tinhTong(n));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- cho người dùng nhập tên đầy đủ 1 người
+        in ra kí tự đầu tiên viết hoa
+        input: vũ hồng vân
+        output: Vũ Hồng Vân -->
+    <script>
+        let name = prompt("hãy nhập họ tên!");
+        function xinChao() {
+            let result = name.split(' ')
+            for (let i = 0; i < name.length; i++) {
+                result[i] = result[i].charAt(0).toUpperCase() + result[i].slice[1];
+            }
+            return result.join(' ');
+            console.log(result);
+        }
+
+        xinChao();
+
+        // function xinChao(string) {
+        //     let result=string.split(' ');
+        //     for (let i= 0; i < result.length; i++) {
+        //         result[i]=result[i].charAt(0).toUpperCase()+result[i].slice[1];
+        //     }
+        //     return result.join(' ');
+        // }
+        // let fullName = xinChao(name);
+        // console.log(fullName);
+    </script>
+</body>
+
+</html>
