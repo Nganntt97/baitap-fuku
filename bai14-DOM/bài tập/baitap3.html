@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .title {
+            background-color: bisque;
+            height: 650px;
+            width: 1200x;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            height: 550px;
+            width: 1000px;
+            margin: 10px auto;
+            padding-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tạo một ứng dụng Todo-list
+Yêu cầu giao diện phải giống bên dưới
+Phải thực hiện được đầy đủ các tính năng Create-Read-Update-Delete
+ -->
+    <div class="title">
+        <div class="container">
+            <div class="container__main">
+                <h2>My to do list</h2>
+            </div>
+            <div class="container_input">
+                <div>
+                    <input id="text" type="text" placeholder="thêm nội dung...">
+                    <button onclick="add()">Add</button>
+                </div>
+            </div>
+            <div class="container_text">
+                <!-- <p>Chưa có công việc nào!</p> -->
+                <p id="hienthi"></p>
+            </div>
+            <!-- <div class="show"> -->
+
+        </div>
+    </div>
+    </div>
+    <script>
+        let comment = [];
+        // let text = document.getElementById('text').value;
+        function add() {
+            console.log('haha');
+            // let show=document.getElementsByClassName("show")
+            let input = document.getElementById('text').value
+            comment.textContent = '' + input
+            console.log(input);
+            // let text = document.querySelector(".text").value
+
+        }
+
+    </script>
+</body>
+
+</html>

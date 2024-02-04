@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            min-width: 100px;
+            display: inline-block;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        .btn {
+            width: 80px;
+            padding: 2px;
+            margin-left: 150px;
+            border-radius: 5px;
+        }
+
+        .list-user {
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- viêts 1 chương trình qly sinh viên
+    -có thể thêm sinh viên
+-có thể chỉnh sửa thông tin
+-xoá sinh viên
+-cacs bước:
+b1:tạp 1 mảng chưua tất cả danh sách sinh viên
+b2:nhấn vào buttton save thì gọi hàm lưu sinh viên -->
+    <form action="">
+        <label for="">username</label>
+        <input type="text" id="username"><br>
+        <label for="">email</label>
+        <input type="text" id="email"><br>
+        <label for="">Số điện thoại</label>
+        <input type="text" id="phone">
+        <label for="">Giới tính</label>
+        <input type="radio" name="gender" value="Nam">Nam
+        <input type="radio" name="gender" checked value="Nữ">Nữ <br>
+        <button class="btn" onclick="addStudents(event)">save</button>
+    </form>
+    <div class="list-user">
+        <table border="1" cellpadding="5" cellspacing="5">
+            <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>email</th>
+                <th>sdt</th>
+                <th>giới tính</th>
+                <th colspa="2">Action</th>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr>
+                <td>1</td>
+                <td>Hoa</td>
+                <td>hoa@gmail.com</td>
+                <td>080</td>
+                <td>Nữ</td>
+                <td>
+                    <button>edit</button> </td>
+                <td> 
+                    <button>delete</button></td>
+                </tr> -->
+
+
+
+            </tbody>
+
+        </table>
+    </div>
+    <script>
+
+        // tạo mảng chưuad danh sách sinh viên
+        let users = [];
+        function addStudents(a) {
+            console.log("đax chạy vào hàm");
+            // chặn việc submit (gui du lieu lên server)
+            e.preventDefault();
+            // lấy thông tin người dùng nhập vào
+            let username = document.getElementById("username").value;
+            let phone = document.getElementById("phone").value;
+            let email = document.getElementById("email").value;
+            let valueGender = "";
+            let elementGender = document.getElementsByName("gender");
+            // console.log("elementGender",elementGender);
+            // console.log("username",username);
+            // console.log("phone",phone);
+            // console.log("email",email);
+            for (let i = 0; i < elementGender.length; i++) {
+                if (elementGender.item(i).checked) {
+                    valueGender = elementGender.item(i).checked
+                }
+
+            }
+            console.log(valueGender);
+
+            // tạo b
+            let user = {
+                id: uuid(),
+                name: username,
+                email: email,
+                phone: phone,
+                gender: valueGender,
+            }
+            // đẩy đối tượng vào mảng users
+            users.push(user)
+            renderStudent();
+            // sau khi bấm lưu đưa file vèe rỗng
+            document.getElementById("username").value="";
+            document.getElementById("phone").value="";
+            document.getElementById("email").value="";
+
+
+        }
+        //    function hiển thị danh sách sonh voee 
+        function genderStudent() {
+            let elm = "";
+            for (let i = 0; i < users.length; i++) {
+                elm +=
+                    `
+            <tr>
+                <td>${i + 1}</td>
+                <td>${users[i].name}</td>
+                <td>${users[i].email}</td>
+                <td>${users[i].phone}</td>
+                <td>${users[i].render}</td>
+                <td>
+                    <button>edit</button> </td>
+                <td> 
+                    <button onclick=deleteUser(${users[i.id]})>delete</button></td>
+                </tr>
+            `
+               
+            }
+            document.getElementById("tbody").innerHTML=elm;
+        }
+        // tạo function xoá user theo id
+        function deleteUser(id) {
+            console.log("11",id);
+            // xoá users theo id
+            // tìm vị trí của user cps id=id trong mảng users
+            let deleteAccess=confirm("bạn có chắc chắn muốn xoá không?");
+            if(!deleteAccess){
+                return
+            }
+            let deleteIndex=users.findIndex(item=>item.id==id);
+            users.splice(deleteIndex,1);
+            renderStudent()
+        }
+
+
+    </script>
+</body>
+
+</html>

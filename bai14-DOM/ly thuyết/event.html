@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        EVENT:NHỮNG SỰ KIỆN TƯƠNG TÁC
+        -click chuột,bàn phím,hover,...
+
+        C1:đặt tên sự kioeejn trực tiêops vào 
+        các thẻ elêment(onclick,onmousemove,...)
+        C2:lất elêmnt ra rồi addEvent cho nó
+      -->
+    <!-- <h1 onclick="eventDom()"> click</h1> -->
+    <input type="nhập tuổi vào">
+    <button onclick="add()">add</button>
+
+    <script>
+        function eventDom() {
+            console.log("lấy thông tin");
+            let element=document.getElementsByTagName("input");
+            let value= element[0].value
+            console.log(value);
+            element[0].value=""
+        }
+
+        function add() {
+            
+        }
+        // thao tác ở bàn phím
+       
+
+    //     function eventDom() {
+    //         console.log("sự kiện click");
+    //     }
+    //     let element=document.getElementsByTagName("h1");
+       
+    //     element[0].addEventListener("click",()=>{
+    //    console.log("băt đầu click");
+    //     })
+
+    </script>
+</body>
+
+</html>

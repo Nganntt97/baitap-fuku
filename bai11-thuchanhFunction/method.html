@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- CÁC PHƯƠNG THỨC LÀM VIỆC VỚI MẢNG 
+    1.filter:lọc các phần tử trong mảng thoả mãn điều kiện
+
+    2.reduce:dungf để tính toán tra về kết quả thoả mãn
+    -->
+    <script>
+        let student = [
+            ["pc", 1], ["laptop,2"], ["pc", 5], ["laptop", 5]
+        ]
+        // let arr=[];
+        // for (let i= 0; i < student.length; i++) {
+        //    if(student[i][0]=="pc")
+
+
+        // }
+        let newStudent = student.filter(function(item,index,array){
+            return item[0] == "pc";
+        })
+        console.log(newStudent);
+
+        // let number=[1,2,5,4,3,6,7,8];
+        // let result=number.reduce((accumulator,itemvalue,index)=>{
+        //     return accumulator+itemvalue
+        // },0)
+        // console.log(result);
+
+        let carts=[
+        ["pc", 5,25000], ["laptop",1,50000], ["mouse",2,20000]
+        ]
+        let result=carts.reduce((accumulator,itemvalue,index)=>{
+            return accumulator+item[1]*item[2]
+        },0)
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

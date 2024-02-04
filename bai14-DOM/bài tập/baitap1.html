@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Khi click vào nút “Hide text”, dòng chữ bên trên sẽ được ẩn đi
+Khi click vào nút “Show text”, dòng chữ bên trên sẽ được hiện ra
+ -->
+    <h2>This is a text.</h2>
+    <button onclick="hide()">Hide text</button>
+    <button onclick="show()">Show text</button>
+    <script>
+        function hide() {
+            console.log("ẩn");
+            let element=document.getElementsByTagName("h2");
+            let an= element[0].innerText=""
+            // let a =element[0].style.display="none";
+            console.log(an);
+
+        }
+        function show() {
+            console.log("hiện");
+            let element=document.getElementsByTagName("h2");
+            let hien= element[0].innerHTML="This is a text."
+            console.log(hien);
+        }
+    </script>
+</body>
+</html>

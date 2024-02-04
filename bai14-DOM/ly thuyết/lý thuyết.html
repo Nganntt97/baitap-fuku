@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- DOM DOCUMENT OBJECT MODEL
+        mô tả tl dạng dối tượng
+        -khi chương trình cđc chạy thì trình duyệt sẽ tạo ra mô hình cây DOM
+        từ moo hình cây có thể thêm sửa xoá các pầhn tử html
+        -Cấc thành phần
+        1.element
+        2.artribute(thuộc tính)
+        3.text
+
+        getElementsByTagNam
+
+
+        Các cách truy xuất để lấy element
+        C1:Lấy theo id
+        C2:LẤY theo CLASS
+        C3:LẤY theo THẺ TAG
+        C4:Lấy theo bộ chọn selector
+
+        Phương thức của classlist
+        nó sẽ lấy ra hết danh sách class của element
+        1.add():thêm tênv claas vào
+        2.remove():xoá tên class
+        3.toggle():giống như cong tắc.có class thì xoá ko có thì thêm vào
+        4.contain:kiểm tra xem element có tồn tại hay không?
+
+    -->
+    <h1 id="title">hello</h1>
+
+    <script>
+        // function changeDom() {
+            let getElementsById = document.getElementById("title");
+            getElementsById.className = "heading"
+        // }
+    </script>
+</body>
+
+</html>

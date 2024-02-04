@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            margin: 5px;
+        }
+
+        #output {
+            margin: 30px;
+            justify-content: center;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!-- Tạo ra một ứng dụng bàn phím ảo
+Giao diện phải giống với giao diện dưới đây
+Khi click vào một chữ thì chữ phải được đổ vào ô textarea ở phía trên
+ -->
+    <textarea name="" id="output" cols="100" rows="5"></textarea>
+    <div class="container">
+        <div class="container1">
+            <button class="input" onclick="input('Q')">Q</button>
+            <button onclick="input('W')">W</button>
+            <button onclick="input('E')">E</button>
+            <button onclick="input('R')">R</button>
+            <button onclick="input('T')">T</button>
+            <button onclick="input('Y')">Y</button>
+            <button onclick="input('U')">U</button>
+            <button onclick="input('I')">I</button>
+            <button onclick="input('O')">O</button>
+            <button onclick="input('P')">P</button>
+        </div>
+        <div class="container1">
+            <button onclick="input('A')">A</button>
+            <button onclick="input('S')">S</button>
+            <button onclick="input('D')">D</button>
+            <button onclick="input('F')">F</button>
+            <button onclick="input('G')">G</button>
+            <button onclick="input('H')">H</button>
+            <button onclick="input('J')">J</button>
+            <button onclick="input('K')">K</button>
+            <button onclick="input('L')">L</button>
+        </div>
+        <div class="container1">
+            <button onclick="input('Z')">Z</button>
+            <button onclick="input('X')">X</button>
+            <button onclick="input('C')">C</button>
+            <button onclick="input('V')">V</button>
+            <button onclick="input('B')">B</button>
+            <button onclick="input('N')">N</button>
+            <button onclick="input('M')">M</button>
+        </div>
+    </div>
+    <script>
+        function input(hienthi) {
+            console.log("hiện");
+            // document.getElementById(output).style
+            let element = document.getElementById("output");
+            element.value += hienthi;
+            // let giatri=element[0].value
+            //     console.log(giatri);
+            //     // element[0].value=""
+
+        }
+    </script>
+</body>
+
+</html>
